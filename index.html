@@ -1,0 +1,244 @@
+<html lang="en">
+<head>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabina's Portfolio</title>
+    <link href="./output.css" rel="stylesheet">
+</head>
+<body class="bg-white shadow-sm w-full">
+    <!-- Navigation -->
+    <nav class="bg-emerald-950 shadow-sm sticky w-full z-10 h-16">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <a href="#" class="text-xl font-bold text-white">Logo</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-white hover:text-gray-300">Home</a>
+                    <a href="#about" class="text-white hover:text-gray-300">Projects</a>
+                    <a href="#projects" class="text-white hover:text-gray-300">Creative</a>
+                    <a href="#contact" class="text-white hover:text-gray-300">Contact</a>
+                </div>
+            </div>
+        </div>
+    
+    </nav>
+    <!-- Hero Section -->
+    <section id="home" class="pt-20 pb-10">
+        <div class="container mx-auto px-4 mt-16">
+            <div class="max-w-4xl mx-auto flex items-center text-center sm:text-left">
+                <!-- Image Section -->
+                <div class="w-1/4 pb-4" >
+                    <img src="images/IMG_4963.JPG" alt="Sabina's Image" class="w-48 h-48 rounded-full object-cover ">
+                </div>
+                <!-- Text Section -->
+                <div class="w-2/3">
+                    <h1 class="text-5xl font-bold text-gray-900 sm:text-6xl">
+                        i'm <span class="text-emerald-900">sabina!</span>
+                    </h1>
+                    <p class="mt-6 text-xl text-gray-600">
+                        Meeting users where they are, I aim to turn needs into meaningful solutions. Embodying the principle of leading without authority, I find stories within the pain points and drive action.
+                    </p>
+                    
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <!-- portfolio title -->
+    <section class="py-10">
+        <div class="container mx-auto px-40">
+            <h1 class="text-4xl font-bold text-left text-emerald-900 py-4">projects.</h1>
+        </div>
+    </section>
+    <head>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.js"></script>
+        <style>
+          .project-card::before {
+            content: '';
+            position: absolute;
+            left: -2rem;
+            top: 50%;
+            width: 1rem;
+            height: 1rem;
+            background: #1D4E3B;
+            border-radius: 50%;
+            transform: translateY(-50%);
+          }
+        </style>
+      </head>
+      <body class="bg-gray-100 min-h-screen p-8">
+        <div class="max-w-4xl mx-auto relative">
+          <!-- Timeline line -->
+          <div class="absolute left-0 top-0 h-full w-0.5 bg-gray-200"></div>
+      
+          <!-- Project Items -->
+          <div class="space-y-12 ml-8">
+            
+      
+            
+
+              
+
+              
+
+              
+
+              
+      
+
+<!-- Trailblazer -->
+<div class="relative project-card transform transition-all duration-300 hover:scale-105 hover:-translate-y-1 cursor-pointer">
+    <div class="relative overflow-hidden rounded-xl shadow-lg">
+        <div class="absolute inset-0">
+            <img src="/api/placeholder/800/400" alt="Project 1" class="w-full h-full object-cover opacity-20"/>
+        </div>
+        <div class="relative p-6 bg-white bg-opacity-90">
+            <div class="flex justify-between items-start mb-4">
+                <h3 class="text-2xl font-bold text-gray-700">Trailblazer ~ LoRaWAN Checkpoint Tracking for Remote Trails</h3>
+                <span class="text-sm text-emerald-900 font-semibold">Ongoing</span>
+            </div>
+            <p class="text-gray-600">Working in a team of 5 for our Final Year Design Project creating a real-time tracking device aiming to reduce the amount of time for Search and Rescue to find lost hikers. Championed the mechanical design of the product, ensuring robustness and weather resistance for outdoor environments.</p>
+            <button onclick="toggleDropdown('dropdown-1')" class="mt-2 text-emerald-700 underline">More Details</button>
+            <div id="dropdown-1" class="hidden mt-2 p-3 bg-gray-200 rounded-lg">
+                <h4 class="text-lg font-semibold text-gray-600 mb-2">The problem</h4>
+                <p>In British Columbia alone, there were 1,750 Search and Rescue (SAR) responses in 2023, indicating a significant number of individuals becoming lost in wilderness areas. As more and more people are taking on adventurous hobbies, we see a 93% increase in SAR missions from 2018 to 2021. Hikers account for 30% of all search and rescue efforts. BC spends C$7-12 million in SAR missions annually on an average of 1500 yearly tasks, 450 of which use helicopters to transport searchers into the wilderness. </p>
+                <h4 class="text-lg font-semibold text-gray-600 mb-2">Current solutions</h4>
+                <p>Search and Rescue teams have methods for narrowing down the search radius by estimating the distance that a person has traveled given the amount of time that has passed and an average human’s gait. The problem is that without cellular signal or satellite communications, the hiker can’t flag their location to searchers. Hikers can purchase off-the-shelf products today including the Garmin InReach, however this solution is costly and the majority of newbie hikers are not willing to invest into them.</p>
+                <h4 class="text-lg font-semibold text-gray-600 mb-2">Our solution</h4>
+                <p>This project aims to reduce these incidents by providing an opt-in tracking system in remote areas. When a person is reported missing, SAR teams face numerous challenges, including delays in both reporting and locating hikers, the high costs associated with search efforts, privacy concerns, and the reliability of available systems. Since SAR teams in Canada are predominantly volunteer-based, managing costs is a critical consideration. To address these challenges, we are building a system consisting of three key components: checkpoint nodes installed along established trails, wearable tracking devices that emit radio signals, and a central hub connected to the internet. When a hiker equipped with the tracking device enters the range of a checkpoint, the device transmits a signal to the central hub. This informs SAR teams of the hiker's location without requiring cellular connectivity, enhancing both the speed and reliability of search efforts.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- HikeWise -->
+<div class="relative project-card transform transition-all duration-300 hover:scale-105 hover:-translate-y-1 cursor-pointer">
+    <div class="relative overflow-hidden rounded-xl shadow-lg">
+        <div class="absolute inset-0">
+            <img src="/api/placeholder/800/400" alt="Project 1" class="w-full h-full object-cover opacity-20"/>
+        </div>
+        <div class="relative p-6 bg-white bg-opacity-90">
+            <div class="flex justify-between items-start mb-4">
+                <h3 class="text-2xl font-bold text-gray-700">Hikewise ~ Web Hike Finding Platform</h3>
+                <span class="text-sm text-emerald-900 font-semibold">Nov 2024</span>
+            </div>
+            <p class="text-gray-600">Working in a team of 5 for our Final Year Design Project creating a real-time tracking device aiming to reduce the amount of time for Search and Rescue to find lost hikers. Championed the mechanical design of the product, ensuring robustness and weather resistance for outdoor environments.</p>
+            <button onclick="toggleDropdown('dropdown-1')" class="mt-2 text-emerald-700 underline">More Details</button>
+            <div id="dropdown-1" class="hidden mt-2 p-3 bg-gray-200 rounded-lg">
+                <h4 class="text-lg font-semibold text-gray-600 mb-2">The problem</h4>
+                <p>In British Columbia alone, there were 1,750 Search and Rescue (SAR) responses in 2023, indicating a significant number of individuals becoming lost in wilderness areas. As more and more people are taking on adventurous hobbies, we see a 93% increase in SAR missions from 2018 to 2021. Hikers account for 30% of all search and rescue efforts. BC spends C$7-12 million in SAR missions annually on an average of 1500 yearly tasks, 450 of which use helicopters to transport searchers into the wilderness. </p>
+                <h4 class="text-lg font-semibold text-gray-600 mb-2">Current solutions</h4>
+                <p>Search and Rescue teams have methods for narrowing down the search radius by estimating the distance that a person has traveled given the amount of time that has passed and an average human’s gait. The problem is that without cellular signal or satellite communications, the hiker can’t flag their location to searchers. Hikers can purchase off-the-shelf products today including the Garmin InReach, however this solution is costly and the majority of newbie hikers are not willing to invest into them.</p>
+                <h4 class="text-lg font-semibold text-gray-600 mb-2">Our solution</h4>
+                <p>This project aims to reduce these incidents by providing an opt-in tracking system in remote areas. When a person is reported missing, SAR teams face numerous challenges, including delays in both reporting and locating hikers, the high costs associated with search efforts, privacy concerns, and the reliability of available systems. Since SAR teams in Canada are predominantly volunteer-based, managing costs is a critical consideration. To address these challenges, we are building a system consisting of three key components: checkpoint nodes installed along established trails, wearable tracking devices that emit radio signals, and a central hub connected to the internet. When a hiker equipped with the tracking device enters the range of a checkpoint, the device transmits a signal to the central hub. This informs SAR teams of the hiker's location without requiring cellular connectivity, enhancing both the speed and reliability of search efforts.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Pillpal -->
+<div class="relative project-card transform transition-all duration-300 hover:scale-105 hover:-translate-y-1 cursor-pointer">
+    <div class="relative overflow-hidden rounded-xl shadow-lg">
+        <div class="absolute inset-0">
+            <img src="/api/placeholder/800/400" alt="Project 1" class="w-full h-full object-cover opacity-20"/>
+        </div>
+        <div class="relative p-6 bg-white bg-opacity-90">
+            <div class="flex justify-between items-start mb-4">
+                <h3 class="text-2xl font-bold text-gray-700">PillPal ~ Medication Management Platform</h3>
+                <span class="text-sm text-emerald-900 font-semibold">Dec 2024</span>
+            </div>
+            <p class="text-gray-600">Designed an interactive platform aiming to reduce missed prescriptions for older adults and provide a summary for caregivers. Tested the final designs in a demo environment.</p>
+            <button onclick="toggleDropdown('dropdown-2')" class="mt-2 text-emerald-700 underline">More Details</button>
+            <div id="dropdown-2" class="hidden mt-2 p-3 bg-gray-200 rounded-lg">
+                <h4 class="text-lg font-semibold text-gray-600 mb-2">The problem</h4>
+                <p>There are various medication management platforms available today, but they have significant limitations that affect elderly users' medication adherence and health outcomes. These platforms often lack customizable alarms, intuitive interfaces, smart contextual reminders, multi-platform support, translation features, and integration with physical medication organizers. They also fall short in providing comprehensive caregiver integration, prescription management, and detailed healthcare provider reports. A new solution could address these gaps by offering features like customizable alarms, simplified visual interfaces, smart contextual reminders across multiple devices, automatic translation of medication instructions, integration with physical medication bottles through image processing, detailed caregiver monitoring capabilities, comprehensive healthcare provider reports, and positive reinforcement systems. This comprehensive approach would improve medication adherence, reduce stress for elderly users, and ultimately lead to better health outcomes while providing valuable insights for healthcare providers to optimize treatment plans.</p>
+               
+                <div class="mx-auto mt-8" style="max-width: 800px;"> 
+                    <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/proto/PtrSjc4e8OOHDlYdHkAsn9/portfolio?node-id=23-32&p=f&scaling=scale-down&content-scaling=fixed&page-id=23%3A30&starting-point-node-id=23%3A31&embed-host=share" allowfullscreen></iframe>            </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+            <!-- Driving up sharing at 1Password -->
+            <div class="relative project-card transform transition-all duration-300 hover:scale-105 hover:-translate-y-1 cursor-pointer">
+                <div class="relative overflow-hidden rounded-xl shadow-lg">
+                  <div class="absolute inset-0">
+                    <img src="/api/placeholder/800/400" alt="Project 1" class="w-full h-full object-cover opacity-20"/>
+                  </div>
+                  <div class="relative p-6 bg-white bg-opacity-90">
+                    <div class="flex justify-between items-start mb-4">
+                      <h3 class="text-2xl font-bold text-gray-700">Creating an Interactive Elevator Interface</h3>
+                      <span class="text-sm text-emerald-900 font-semibold">Sept - Dec 2023</span>
+                    </div>
+                    <p class="text-gray-600">Working in a team of 5 for our Final Year Design Project creating a real-time tracking device aiming to reduce the amount of time for Search and Rescue to find lost hikers. Championed the mechanical design of the product.</p>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+
+
+
+        <script>
+            function toggleDropdown(id) {
+                var dropdown = document.getElementById(id);
+                if (dropdown.classList.contains('hidden')) {
+                    dropdown.classList.remove('hidden');
+                } else {
+                    dropdown.classList.add('hidden');
+                }
+            }
+        </script>
+
+      </body>
+
+    
+ 
+
+
+  <script>
+    document.querySelectorAll(".toggle-details").forEach(button => {
+      button.addEventListener("click", function() {
+        let details = this.nextElementSibling;
+        details.classList.toggle("hidden");
+        this.textContent = details.classList.contains("hidden") ? "View More" : "View Less";
+      });
+    });
+  </script>
+
+    
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">Get In Touch</h2>
+            <div class="max-w-xl mx-auto">
+                <div class="flex flex-col space-y-4">
+                    <a href="mailto:your.email@example.com" class="flex items-center justify-center space-x-3 text-gray-600 hover:text-gray-900">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                        </svg>
+                        <span>your.email@example.com</span>
+                    </a>
+                    <a href="https://github.com/yourusername" target="_blank" class="flex items-center justify-center space-x-3 text-gray-600 hover:text-gray-900">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"/>
+                        </svg>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="https://linkedin.com/in/yourusername" target="_blank" class="flex items-center justify-center space-x-3 text-gray-600 hover:text-gray-900">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        </svg>
+                        <span>LinkedIn</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+  
+</body>
+
+</html>
