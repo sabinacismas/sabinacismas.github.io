@@ -101,82 +101,148 @@
             <p class="text-gray-600">Working in a team of 5 for our Final Year Design Project creating a real-time tracking device aiming to reduce the amount of time for Search and Rescue to find lost hikers. Championed the mechanical design of the product, ensuring robustness and weather resistance for outdoor environments.</p>
             <button onclick="toggleDropdown('dropdown-1')" class="mt-2 text-emerald-700 underline">More Details</button>
             <div id="dropdown-1" class="hidden mt-2 p-3 bg-gray-200 rounded-lg">
-                <h4 class="text-lg font-semibold text-gray-600 mb-2">The problem</h4>
+                <h4 class="text-lg font-semibold text-gray-600 mb-2 pt-4">The problem</h4>
                 <p>In British Columbia alone, there were 1,750 Search and Rescue (SAR) responses in 2023, indicating a significant number of individuals becoming lost in wilderness areas. As more and more people are taking on adventurous hobbies, we see a 93% increase in SAR missions from 2018 to 2021. Hikers account for 30% of all search and rescue efforts. BC spends C$7-12 million in SAR missions annually on an average of 1500 yearly tasks, 450 of which use helicopters to transport searchers into the wilderness. </p>
-                <h4 class="text-lg font-semibold text-gray-600 mb-2">Current solutions</h4>
+                <h4 class="text-lg font-semibold text-gray-600 mb-2 pt-4">Current solutions</h4>
                 <p>Search and Rescue teams have methods for narrowing down the search radius by estimating the distance that a person has traveled given the amount of time that has passed and an average human’s gait. The problem is that without cellular signal or satellite communications, the hiker can’t flag their location to searchers. Hikers can purchase off-the-shelf products today including the Garmin InReach, however this solution is costly and the majority of newbie hikers are not willing to invest into them.</p>
-                <h4 class="text-lg font-semibold text-gray-600 mb-2">Our solution</h4>
+                <h4 class="text-lg font-semibold text-gray-600 mb-2 pt-4">Our solution</h4>
                 <p>This project aims to reduce these incidents by providing an opt-in tracking system in remote areas. When a person is reported missing, SAR teams face numerous challenges, including delays in both reporting and locating hikers, the high costs associated with search efforts, privacy concerns, and the reliability of available systems. Since SAR teams in Canada are predominantly volunteer-based, managing costs is a critical consideration. To address these challenges, we are building a system consisting of three key components: checkpoint nodes installed along established trails, wearable tracking devices that emit radio signals, and a central hub connected to the internet. When a hiker equipped with the tracking device enters the range of a checkpoint, the device transmits a signal to the central hub. This informs SAR teams of the hiker's location without requiring cellular connectivity, enhancing both the speed and reliability of search efforts.</p>
+            
+<!-- horizontal scroll-->
+<div class="relative mt-4">
+    <!-- Left Arrow -->
+    <button class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-white/80 rounded-full p-2 shadow-lg z-10 hover:bg-white" onclick="scrollGallery('left', 'gallery-1')">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-800" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+        </svg>
+    </button>
+    
+    <!-- Gallery Container -->
+    <div id="gallery-1" class="flex overflow-x-hidden scroll-smooth gap-4 px-8">
+        <img src="images/IMG_1747.JPG" alt="Project image 1" class="h-48 w-64 object-cover rounded-lg flex-shrink-0">
+        <img src="images/IMG_1763.JPG" alt="Project image 3" class="h-48 w-64 object-cover rounded-lg flex-shrink-0">
+        <img src="images/DSC07309.JPG" alt="Project image 2" class="h-48 w-64 object-cover rounded-lg flex-shrink-0">
+    </div>
+    
+    <!-- Right Arrow -->
+    <button class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white/80 rounded-full p-2 shadow-lg z-10 hover:bg-white" onclick="scrollGallery('right', 'gallery-1')">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-800" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+        </svg>
+    </button>
+</div>
+<!--close horizontal scroll-->
             </div>
         </div>
     </div>
 </div>
 
-<!-- HikeWise -->
-<div class="relative project-card transform transition-all duration-300 hover:scale-105 hover:-translate-y-1 cursor-pointer">
-    <div class="relative overflow-hidden rounded-xl shadow-lg">
-        <div class="absolute inset-0">
-            <img src="/api/placeholder/800/400" alt="Project 1" class="w-full h-full object-cover opacity-20"/>
-        </div>
-        <div class="relative p-6 bg-white bg-opacity-90">
-            <div class="flex justify-between items-start mb-4">
-                <h3 class="text-2xl font-bold text-gray-700">Hikewise ~ Web Hike Finding Platform</h3>
-                <span class="text-sm text-emerald-900 font-semibold">Nov 2024</span>
+        <!-- HikeWise -->
+        <div class="relative project-card transform transition-all duration-300 hover:scale-105 hover:-translate-y-1 cursor-pointer">
+            <div class="relative overflow-hidden rounded-xl shadow-lg">
+                <div class="absolute inset-0">
+                    <img src="/api/placeholder/800/400" alt="Project 1" class="w-full h-full object-cover opacity-20"/>
+                </div>
+                <div class="relative p-6 bg-white bg-opacity-90">
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="text-2xl font-bold text-gray-700">Hikewise ~ Hike Finding Platform</h3>
+                        <span class="text-sm text-emerald-900 font-semibold">Nov 2024</span>
+                    </div>
+                    <p class="text-gray-600">Hikewise was a solo project where I prototyped a trail-finding web platform for hiking enthusiasts using Figma. This prototype finds trails in the user's area and displays them on a map, providing details for the user such as estimated time of completion. The prototype includes a sign-in flow, search functionality, and marketing page. Try the prototype for yourself below!</p>
+                    <button onclick="toggleDropdown('dropdown-2')" class="mt-2 text-emerald-700 underline">More Details</button>
+                    <div id="dropdown-2" class="hidden mt-2 p-3 bg-gray-200 rounded-lg">
+                        <h4 class="text-lg font-semibold text-gray-600 mb-2">The design</h4>
+                       
+                        
+                        <div class="mx-auto mt-8" style="max-width: 800px;"> 
+                            <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/proto/KN3UJBDUHBveIgvNeCjd6B/MSE343-Labs?node-id=32-12&scaling=scale-down&content-scaling=fixed&page-id=32%3A10&starting-point-node-id=32%3A12&embed-host=share" allowfullscreen></iframe>                        </div>
+                    </div>
+                </div>
             </div>
-            <p class="text-gray-600">Working in a team of 5 for our Final Year Design Project creating a real-time tracking device aiming to reduce the amount of time for Search and Rescue to find lost hikers. Championed the mechanical design of the product, ensuring robustness and weather resistance for outdoor environments.</p>
-            <button onclick="toggleDropdown('dropdown-1')" class="mt-2 text-emerald-700 underline">More Details</button>
-            <div id="dropdown-1" class="hidden mt-2 p-3 bg-gray-200 rounded-lg">
-                <h4 class="text-lg font-semibold text-gray-600 mb-2">The problem</h4>
-                <p>In British Columbia alone, there were 1,750 Search and Rescue (SAR) responses in 2023, indicating a significant number of individuals becoming lost in wilderness areas. As more and more people are taking on adventurous hobbies, we see a 93% increase in SAR missions from 2018 to 2021. Hikers account for 30% of all search and rescue efforts. BC spends C$7-12 million in SAR missions annually on an average of 1500 yearly tasks, 450 of which use helicopters to transport searchers into the wilderness. </p>
-                <h4 class="text-lg font-semibold text-gray-600 mb-2">Current solutions</h4>
-                <p>Search and Rescue teams have methods for narrowing down the search radius by estimating the distance that a person has traveled given the amount of time that has passed and an average human’s gait. The problem is that without cellular signal or satellite communications, the hiker can’t flag their location to searchers. Hikers can purchase off-the-shelf products today including the Garmin InReach, however this solution is costly and the majority of newbie hikers are not willing to invest into them.</p>
-                <h4 class="text-lg font-semibold text-gray-600 mb-2">Our solution</h4>
-                <p>This project aims to reduce these incidents by providing an opt-in tracking system in remote areas. When a person is reported missing, SAR teams face numerous challenges, including delays in both reporting and locating hikers, the high costs associated with search efforts, privacy concerns, and the reliability of available systems. Since SAR teams in Canada are predominantly volunteer-based, managing costs is a critical consideration. To address these challenges, we are building a system consisting of three key components: checkpoint nodes installed along established trails, wearable tracking devices that emit radio signals, and a central hub connected to the internet. When a hiker equipped with the tracking device enters the range of a checkpoint, the device transmits a signal to the central hub. This informs SAR teams of the hiker's location without requiring cellular connectivity, enhancing both the speed and reliability of search efforts.</p>
-            </div>
         </div>
-    </div>
-</div>
 
-<!-- Pillpal -->
-<div class="relative project-card transform transition-all duration-300 hover:scale-105 hover:-translate-y-1 cursor-pointer">
-    <div class="relative overflow-hidden rounded-xl shadow-lg">
-        <div class="absolute inset-0">
-            <img src="/api/placeholder/800/400" alt="Project 1" class="w-full h-full object-cover opacity-20"/>
-        </div>
-        <div class="relative p-6 bg-white bg-opacity-90">
-            <div class="flex justify-between items-start mb-4">
-                <h3 class="text-2xl font-bold text-gray-700">PillPal ~ Medication Management Platform</h3>
-                <span class="text-sm text-emerald-900 font-semibold">Dec 2024</span>
-            </div>
-            <p class="text-gray-600">Designed an interactive platform aiming to reduce missed prescriptions for older adults and provide a summary for caregivers. Tested the final designs in a demo environment.</p>
-            <button onclick="toggleDropdown('dropdown-2')" class="mt-2 text-emerald-700 underline">More Details</button>
-            <div id="dropdown-2" class="hidden mt-2 p-3 bg-gray-200 rounded-lg">
-                <h4 class="text-lg font-semibold text-gray-600 mb-2">The problem</h4>
-                <p>There are various medication management platforms available today, but they have significant limitations that affect elderly users' medication adherence and health outcomes. These platforms often lack customizable alarms, intuitive interfaces, smart contextual reminders, multi-platform support, translation features, and integration with physical medication organizers. They also fall short in providing comprehensive caregiver integration, prescription management, and detailed healthcare provider reports. A new solution could address these gaps by offering features like customizable alarms, simplified visual interfaces, smart contextual reminders across multiple devices, automatic translation of medication instructions, integration with physical medication bottles through image processing, detailed caregiver monitoring capabilities, comprehensive healthcare provider reports, and positive reinforcement systems. This comprehensive approach would improve medication adherence, reduce stress for elderly users, and ultimately lead to better health outcomes while providing valuable insights for healthcare providers to optimize treatment plans.</p>
-               
-                <div class="mx-auto mt-8" style="max-width: 800px;"> 
-                    <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/proto/PtrSjc4e8OOHDlYdHkAsn9/portfolio?node-id=23-32&p=f&scaling=scale-down&content-scaling=fixed&page-id=23%3A30&starting-point-node-id=23%3A31&embed-host=share" allowfullscreen></iframe>            </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-            <!-- Driving up sharing at 1Password -->
+            <!-- Pillpal -->
             <div class="relative project-card transform transition-all duration-300 hover:scale-105 hover:-translate-y-1 cursor-pointer">
                 <div class="relative overflow-hidden rounded-xl shadow-lg">
-                  <div class="absolute inset-0">
-                    <img src="/api/placeholder/800/400" alt="Project 1" class="w-full h-full object-cover opacity-20"/>
-                  </div>
-                  <div class="relative p-6 bg-white bg-opacity-90">
-                    <div class="flex justify-between items-start mb-4">
-                      <h3 class="text-2xl font-bold text-gray-700">Creating an Interactive Elevator Interface</h3>
-                      <span class="text-sm text-emerald-900 font-semibold">Sept - Dec 2023</span>
+                    <div class="absolute inset-0">
+                        <img src="/api/placeholder/800/400" alt="Project 1" class="w-full h-full object-cover opacity-20"/>
                     </div>
-                    <p class="text-gray-600">Working in a team of 5 for our Final Year Design Project creating a real-time tracking device aiming to reduce the amount of time for Search and Rescue to find lost hikers. Championed the mechanical design of the product.</p>
-                  </div>
+                    <div class="relative p-6 bg-white bg-opacity-90">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-2xl font-bold text-gray-700">PillPal ~ Medication Management Platform</h3>
+                            <span class="text-sm text-emerald-900 font-semibold">Dec 2024</span>
+                        </div>
+                        <p class="text-gray-600">Designed an interactive platform aiming to reduce missed prescriptions for older adults and provide a summary for caregivers. Tested the final designs in a demo environment.</p>
+                        <button onclick="toggleDropdown('dropdown-3')" class="mt-2 text-emerald-700 underline">More Details</button>
+                        <div id="dropdown-3" class="hidden mt-2 p-3 bg-gray-200 rounded-lg">
+                            <h4 class="text-lg font-semibold text-gray-600 mb-2">The problem</h4>
+                            <p>There are various medication management platforms available today, but they have significant limitations that affect elderly users' medication adherence and health outcomes. These platforms often lack customizable alarms, intuitive interfaces, smart contextual reminders, multi-platform support, translation features, and integration with physical medication organizers. They also fall short in providing comprehensive caregiver integration, prescription management, and detailed healthcare provider reports.</p>
+                            <h4 class="text-lg font-semibold text-gray-600 mb-2">The solution</h4>
+                            <p>A new solution could address these gaps by offering features like customizable alarms, simplified visual interfaces, smart contextual reminders across multiple devices, automatic translation of medication instructions, integration with physical medication bottles through image processing, detailed caregiver monitoring capabilities, comprehensive healthcare provider reports, and positive reinforcement systems. This comprehensive approach would improve medication adherence, reduce stress for elderly users, and ultimately lead to better health outcomes while providing valuable insights for healthcare providers to optimize treatment plans.</p>
+                            <div class="mx-auto mt-8" style="max-width: 800px;"> 
+                                <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/proto/PtrSjc4e8OOHDlYdHkAsn9/portfolio?node-id=23-32&p=f&scaling=scale-down&content-scaling=fixed&page-id=23%3A30&starting-point-node-id=23%3A31&embed-host=share" allowfullscreen></iframe>            
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
-          </div>
+            </div>
+<!--driving up sharing at 1Password-->
+            <div class="relative project-card transform transition-all duration-300 hover:scale-105 hover:-translate-y-1 cursor-pointer">
+                <div class="relative overflow-hidden rounded-xl shadow-lg">
+                    <div class="absolute inset-0">
+                        <img src="/api/placeholder/800/400" alt="Project 1" class="w-full h-full object-cover opacity-20"/>
+                    </div>
+                    <div class="relative p-6 bg-white bg-opacity-90">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-2xl font-bold text-gray-700">Driving Up Sharing at 1Password</h3>
+                            <span class="text-sm text-emerald-900 font-semibold">Sept - Dec 2023</span>
+                        </div>
+                        <p class="text-gray-600">Whether you’re sharing a Netflix password or sending over an important tax document, there is always a risk with sending decrypted information. My goal was to increase visibility, usage of the sharing feature and ultimately drive up account sign-ups attributed to share links for both B2B and B2C clients on the 1Password platform. The result was a series of 5+ feature releases to which a 55% increase in feature usage and 4-5% of total account sign-ups are attributed to.</p>
+                        <button onclick="toggleDropdown('dropdown-4')" class="mt-2 text-emerald-700 underline">More Details</button>
+                        <div id="dropdown-4" class="hidden mt-2 p-3 bg-gray-200 rounded-lg">
+                            <h4 class="text-lg font-semibold text-gray-600 mb-2 pt-4">The problem</h4>
+                            <p>Through user testing, it was clear to me that many users weren’t even aware that 1Password had a sharing feature. Users were screenshotting or copying and pasting their sensitive credentials and sending them over to family members and friends. This can be a risk for a number of reasons.  </p>
+                            <p class="ml-8 mt-4">1. The credentials could be leaked through a hacked account. </p>
+                            <p class="ml-8 mt-4">2. The credentials could accidentally be shared to the wrong person.</p>
+                            <p class="ml-8 mt-4">3. There is no way to control the amount of time that the recipient has access to your credentials. </p>
+                            <p class="mt-4">The 1Password sharing feature allows users to set a time limit and limit the link to only be accessible to the intended recipients by sending their emails a secure access code. The sharing feature is a great marketing feature for 1Password, because it can be shared to non-1Password users, which gives them first-hand exposure to the experience. By driving up feature usage, I was also aiming to drive up sign-ups attributed to sharing. </p>
+                            <h4 class="text-lg font-semibold text-gray-600 mb-2 pt-4">The solution</h4>
+                            <p class="ml-8 mt-4">1. Completely revamped the sharing experience by streamlining the link generation process, which reduced the number of clicks by half. Integrated native operating system sharing capabilities like the iOS share sheet, implemented intelligent settings retention from previous shares to eliminate repetitive adjustments, and added a smart contact search with autocomplete for sharing with specific individuals.</p>
+                            <p class="ml-8 mt-4">2. Redesigned the sensitive credential display page for non-1Password users, focusing on enhanced accessibility and interface intuitiveness. This overhaul was specifically targeted at improving the user experience for shared item recipients, with the goal of driving higher sign-up conversion rates through a more welcoming and understandable interface. </p>
+                            <p class="ml-8 mt-4">3. Strategically relocated the sharing functionality from the menu to the main item page, significantly increasing feature visibility and accessibility. This architectural change was designed to bring sharing capabilities to the forefront of the user experience, resulting in increased feature discovery and higher engagement rates with sharing functionalities. </p>
+                            <p class="ml-8 mt-4">4. Developed and implemented a proactive screenshot detection system that intelligently redirects users from taking screenshots of their credentials to instead share them through secure links. This feature encourages safer credential sharing practices while driving up usage of the secure sharing feature, ultimately creating a more secure ecosystem for all users. </p>
+                            <p class="ml-8 mt-4">5. Led an A/B testing initiative for the share recipient landing page, analyzing user behavior and conversion metrics to optimize the marketing experience. The data-driven insights from this testing led to significant improvements in the landing page design, resulting in better conversion rates and a more effective first impression for potential new users. </p>
+
+            <!-- horizontal scroll-->
+            <div class="relative mt-4">
+                <!-- Left Arrow -->
+                <button class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-white/80 rounded-full p-2 shadow-lg z-10 hover:bg-white" onclick="scrollGallery('left', 'gallery-1')">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-800" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                    </svg>
+                </button>
+                
+                <!-- Gallery Container -->
+                <div id="gallery-1" class="flex overflow-x-hidden scroll-smooth gap-4 px-8">
+                    <img src="images/IMG_1747.JPG" alt="Project image 1" class="h-48 w-64 object-cover rounded-lg flex-shrink-0">
+                    <img src="images/IMG_1763.JPG" alt="Project image 3" class="h-48 w-64 object-cover rounded-lg flex-shrink-0">
+                    <img src="images/DSC07309.JPG" alt="Project image 2" class="h-48 w-64 object-cover rounded-lg flex-shrink-0">
+                </div>
+                
+                <!-- Right Arrow -->
+                <button class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white/80 rounded-full p-2 shadow-lg z-10 hover:bg-white" onclick="scrollGallery('right', 'gallery-1')">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-800" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                    </svg>
+                </button>
+            </div>
+            <!--close horizontal scroll-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
         </div>
 
 
@@ -213,22 +279,22 @@
     <!-- Contact Section -->
     <section id="contact" class="py-20 bg-white">
         <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">Get In Touch</h2>
+            <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">Let's Connect!</h2>
             <div class="max-w-xl mx-auto">
                 <div class="flex flex-col space-y-4">
                     <a href="mailto:your.email@example.com" class="flex items-center justify-center space-x-3 text-gray-600 hover:text-gray-900">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
                         </svg>
-                        <span>your.email@example.com</span>
+                        <span>sabinacismas02@gmail.com</span>
                     </a>
-                    <a href="https://github.com/yourusername" target="_blank" class="flex items-center justify-center space-x-3 text-gray-600 hover:text-gray-900">
+                    <a href="https://github.com/sabinacismas" target="_blank" class="flex items-center justify-center space-x-3 text-gray-600 hover:text-gray-900">
                         <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                             <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"/>
                         </svg>
                         <span>GitHub</span>
                     </a>
-                    <a href="https://linkedin.com/in/yourusername" target="_blank" class="flex items-center justify-center space-x-3 text-gray-600 hover:text-gray-900">
+                    <a href="www.linkedin.com/in/sabina-cismas-9608441ab" target="_blank" class="flex items-center justify-center space-x-3 text-gray-600 hover:text-gray-900">
                         <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                             <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
                         </svg>
@@ -239,6 +305,26 @@
         </div>
     </section>
   
+<!-- horizontal scroll functionality -->
+<script>
+    function scrollGallery(direction, galleryId) {
+        const gallery = document.getElementById(galleryId);
+        const scrollAmount = 288; // Width of image (256px) + gap (32px)
+        
+        if (direction === 'left') {
+            gallery.scrollBy({
+                left: -scrollAmount,
+                behavior: 'smooth'
+            });
+        } else {
+            gallery.scrollBy({
+                left: scrollAmount,
+                behavior: 'smooth'
+            });
+        }
+    }
+</script>
+
 </body>
 
 </html>
