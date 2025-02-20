@@ -12,11 +12,10 @@
     <nav class="bg-emerald-950 shadow-sm sticky w-full z-10 h-16">
         <div class="container mx-auto px-4">
             <div class="flex justify-between items-center h-16">
-                <a href="#" class="text-xl font-bold text-white">Logo</a>
+                <a href="#" class="text-xl font-bold text-white">SC</a>
                 <div class="hidden md:flex space-x-8">
                     <a href="#home" class="text-white hover:text-gray-300">Home</a>
                     <a href="#about" class="text-white hover:text-gray-300">Projects</a>
-                    <a href="#projects" class="text-white hover:text-gray-300">Creative</a>
                     <a href="#contact" class="text-white hover:text-gray-300">Contact</a>
                 </div>
             </div>
@@ -44,7 +43,7 @@
             </div>
         </div>
         
-    </section>
+    </section id="about"class="pt-20 pb-10">
     <!-- portfolio title -->
     <section class="py-10">
         <div class="container mx-auto px-40">
@@ -212,36 +211,35 @@
                             <p class="ml-8 mt-4">3. Strategically relocated the sharing functionality from the menu to the main item page, significantly increasing feature visibility and accessibility. This architectural change was designed to bring sharing capabilities to the forefront of the user experience, resulting in increased feature discovery and higher engagement rates with sharing functionalities. </p>
                             <p class="ml-8 mt-4">4. Developed and implemented a proactive screenshot detection system that intelligently redirects users from taking screenshots of their credentials to instead share them through secure links. This feature encourages safer credential sharing practices while driving up usage of the secure sharing feature, ultimately creating a more secure ecosystem for all users. </p>
                             <p class="ml-8 mt-4">5. Led an A/B testing initiative for the share recipient landing page, analyzing user behavior and conversion metrics to optimize the marketing experience. The data-driven insights from this testing led to significant improvements in the landing page design, resulting in better conversion rates and a more effective first impression for potential new users. </p>
-
             <!-- horizontal scroll-->
             <div class="relative mt-4">
                 <!-- Left Arrow -->
-                <button class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-white/80 rounded-full p-2 shadow-lg z-10 hover:bg-white" onclick="scrollGallery('left', 'gallery-1')">
+                <button class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-white/80 rounded-full p-2 shadow-lg z-10 hover:bg-white" onclick="scrollGallery('left', 'gallery-2')">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-800" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
                     </svg>
                 </button>
                 
                 <!-- Gallery Container -->
-                <div id="gallery-1" class="flex overflow-x-hidden scroll-smooth gap-4 px-8">
-                    <img src="images/IMG_1747.JPG" alt="Project image 1" class="h-48 w-64 object-cover rounded-lg flex-shrink-0">
-                    <img src="images/IMG_1763.JPG" alt="Project image 3" class="h-48 w-64 object-cover rounded-lg flex-shrink-0">
-                    <img src="images/DSC07309.JPG" alt="Project image 2" class="h-48 w-64 object-cover rounded-lg flex-shrink-0">
+                <div id="gallery-2" class="flex overflow-x-hidden scroll-smooth gap-4 px-8">
+                    <img src="images/frame1.JPG" alt="Project image 1" class="h-48 w-64 object-cover rounded-lg flex-shrink-0">
+                    <img src="images/frame2.JPG" alt="Project image 3" class="h-48 w-64 object-cover rounded-lg flex-shrink-0">
+                    <img src="images/frame3.JPG" alt="Project image 2" class="h-48 w-64 object-cover rounded-lg flex-shrink-0">
                 </div>
                 
                 <!-- Right Arrow -->
-                <button class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white/80 rounded-full p-2 shadow-lg z-10 hover:bg-white" onclick="scrollGallery('right', 'gallery-1')">
+                <button class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white/80 rounded-full p-2 shadow-lg z-10 hover:bg-white" onclick="scrollGallery('right', 'gallery-2')">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-800" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
                     </svg>
                 </button>
             </div>
+            
             <!--close horizontal scroll-->
                         </div>
                     </div>
                 </div>
             </div>
-
             
         </div>
 
