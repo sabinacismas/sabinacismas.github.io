@@ -14,22 +14,22 @@
 <body class="bg-gray-50 min-h-screen">
 
 <!-- Navigation -->
-<nav class="bg-emerald-950 shadow-sm sticky top-0 w-full z-10 h-16">
-    <div class="container mx-auto px-4">
+<nav class="bg-white shadow-md sticky top-0 w-full z-10 h-16">
+    <div class="max-w-4xl mx-auto px-6 sm:px-8">
         <div class="flex justify-between items-center h-16">
-            <a href="index.html" class="text-xl font-bold text-white">SC</a>
+            <a href="index.html" class="text-xl font-bold text-black hover:text-emerald-800">SC</a>
             
             <!-- Desktop Navigation -->
             <div class="hidden md:flex space-x-8">
-                <a href="index.html#home" class="text-white hover:text-gray-300">Home</a>
-                <a href="index.html#projects" class="text-white hover:text-gray-300">Projects</a>
-                <a href="gallery.html" class="text-white hover:text-gray-300">Creative</a>
-                <a href="index.html#contact" class="text-white hover:text-gray-300">Contact</a>
+                <a href="index.html#home" class="text-black hover:text-emerald-800 hover:underline">Home</a>
+                <a href="index.html#projects" class="text-black hover:text-emerald-800 hover:underline">Projects</a>
+                <a href="gallery.html" class="text-black hover:text-emerald-800 hover:underline">Creative</a>
+                <a href="index.html#contact" class="text-black hover:text-emerald-800 hover:underline">Contact</a>
             </div>
             
             <!-- Mobile Navigation Button -->
             <div class="md:hidden">
-                <button id="mobile-menu-button" class="text-white">
+                <button id="mobile-menu-button" class="text-black">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
                     </svg>
@@ -40,7 +40,7 @@
     
     <!-- Mobile Menu (Hidden by default) -->
     <div id="mobile-menu" class="hidden bg-emerald-900 md:hidden">
-        <div class="px-2 pt-2 pb-3 space-y-1">
+        <div class="max-w-3xl mx-auto px-6 sm:px-8">
             <a href="index.html#home" class="block px-3 py-2 text-white hover:bg-emerald-800 rounded">Home</a>
             <a href="index.html#projects" class="block px-3 py-2 text-white hover:bg-emerald-800 rounded">Projects</a>
             <a href="gallery.html" class="block px-3 py-2 text-white hover:bg-emerald-800 rounded">Creative</a>
@@ -59,95 +59,234 @@
 
 
     
-    <!-- Main Content -->
-    <main class="container mx-auto px-4 py-8">
-            <!-- gallery title -->
+<!-- Main Content - Adding gallery grid here -->
+<main class="py-8">
+    <!-- Gallery title section with consistent width -->
     <section id="projects" class="py-10">
-        <div class="container mx-auto px-20">
-            <h1 class="text-4xl font-bold text-left text-emerald-900 py-4">creative.</h1>
-        <p class="mt-4 text-xl text-gray-600">Welcome to my curated photo gallery, where I share glimpses of the world through my lens. From the coastlines of San Francisco to the serenity of the Romanian mountains, I aim to share some of my favourite moments from my travels around the world. My passion for photography allows me to create unique visual narratives in the way that I see the world that I'm excited to share. </p>
-        
+        <div class="max-w-4xl mx-auto px-6 sm:px-8">
+            <h1 class="text-4xl font-bold text-left text-emerald-900 py-4">Creative</h1>
+            <p class="mt-4 text-xl text-gray-600">Welcome to my curated photo gallery, where I share glimpses of the world through my lens. From the coastlines of San Francisco to the serenity of the Romanian mountains, I aim to share some of my favourite moments from my travels around the world. My passion for photography allows me to create unique visual narratives in the way that I see the world that I'm excited to share.</p>
         </div>
     </section>
-        
-        <!-- Gallery Grid -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-16">
+    
+    <!-- Gallery Grid with consistent width -->
+    <div class="max-w-4xl mx-auto px-6 sm:px-8">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
             <!-- Image 1 -->
-            <a href="images/thousandgatessab.jpg" data-lightbox="gallery" data-title="Photo 1" class="block overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
-                <img src="images/thousandgatessab.jpg" alt="Photo 1" class="w-full h-64 object-cover">
+            <div class="overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 cursor-pointer" onclick="openGallery(0)">
+                <img src="images/thousandgatessab.jpg" alt="10,000 Gates, Japan" class="w-full h-64 object-cover">
                 <div class="p-3 bg-white">
                     <p class="text-gray-700">10,000 Gates, Japan</p>
                 </div>
-            </a>
+            </div>
             
             <!-- Image 2 -->
-            <a href="images/transfagarasansab.jpg" data-lightbox="gallery" data-title="Photo 2" class="block overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
-                <img src="images/transfagarasansab.jpg" alt="Photo 2" class="w-full h-64 object-cover">  
+            <div class="overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 cursor-pointer" onclick="openGallery(1)">
+                <img src="images/transfagarasansab.jpg" alt="Transfagarasan, Romania" class="w-full h-64 object-cover">  
                 <div class="p-3 bg-white">
                     <p class="text-gray-700">Transfagarasan, Romania</p>
                 </div>
-            </a>
+            </div>
             
-            <!-- Add more images with the same structure -->
-            <!-- Image 3 (placeholder) -->
-            <a href="images/sfcoast2sab.jpg" data-lightbox="gallery" data-title="Photo 3" class="block overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
-                <img src="images/sfcoast2sab.jpg" alt="Photo 3" class="w-full h-64 object-cover">
-                <div class="p-3 bg-opacity-50 bg-white ">
-                    <p class="text-gray-700">San Francisco</p>
-                </div>
-            </a>
-            
-            <!-- Image 4 (placeholder) -->
-            <a href="images/sfcoastsab.jpg" data-lightbox="gallery" data-title="Photo 4" class="block overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
-                <img src="images/sfcoastsab.jpg" alt="Photo 4" class="w-full h-64 object-cover">
+            <!-- Image 3 -->
+            <div class="overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 cursor-pointer" onclick="openGallery(2)">
+                <img src="images/sfcoast2sab.jpg" alt="San Francisco" class="w-full h-64 object-cover">
                 <div class="p-3 bg-white">
                     <p class="text-gray-700">San Francisco</p>
                 </div>
-            </a>
-
-            <a href="images/transfagarasan2sab.jpg" data-lightbox="gallery" data-title="Photo 5" class="block overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
-                <img src="images/transfagarasan2sab.jpg" alt="Photo 5" class="w-full h-64 object-cover">
+            </div>
+            
+            <!-- Image 4 -->
+            <div class="overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 cursor-pointer" onclick="openGallery(3)">
+                <img src="images/sfcoastsab.jpg" alt="San Francisco" class="w-full h-64 object-cover">
                 <div class="p-3 bg-white">
-                    <p class="text-gray-700">Transfagarasan, Romania </p>
+                    <p class="text-gray-700">San Francisco</p>
                 </div>
-            </a>
-
-            <a href="images/umedaskysab.jpg" data-lightbox="gallery" data-title="Photo 6" class="block overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
-                <img src="images/umedaskysab.jpg" alt="Photo 6" class="w-full h-64 object-cover">
+            </div>
+            
+            <!-- Image 5 -->
+            <div class="overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 cursor-pointer" onclick="openGallery(4)">
+                <img src="images/transfagarasan2sab.jpg" alt="Transfagarasan, Romania" class="w-full h-64 object-cover">
+                <div class="p-3 bg-white">
+                    <p class="text-gray-700">Transfagarasan, Romania</p>
+                </div>
+            </div>
+            
+            <!-- Image 6 -->
+            <div class="overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 cursor-pointer" onclick="openGallery(5)">
+                <img src="images/umedaskysab.jpg" alt="Osaka, Japan" class="w-full h-64 object-cover">
                 <div class="p-3 bg-white">
                     <p class="text-gray-700">Osaka, Japan</p>
                 </div>
-            </a>
-
-            <a href="images/vermontsab.jpg" data-lightbox="gallery" data-title="Photo 7" class="block overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
-                <img src="images/vermontsab.jpg" alt="Photo 7" class="w-full h-64 object-cover">
+            </div>
+            
+            <!-- Image 7 -->
+            <div class="overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 cursor-pointer" onclick="openGallery(6)">
+                <img src="images/vermontsab.jpg" alt="Vermont" class="w-full h-64 object-cover">
                 <div class="p-3 bg-white">
                     <p class="text-gray-700">Vermont</p>
                 </div>
-            </a>
-
-            <a href="images/sfcoast3sab.jpg" data-lightbox="gallery" data-title="Photo 8" class="block overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
-                <img src="images/sfcoast3sab.jpg" alt="Photo 8" class="w-full h-64 object-cover">
+            </div>
+            
+            <!-- Image 8 -->
+            <div class="overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 cursor-pointer" onclick="openGallery(7)">
+                <img src="images/sfcoast3sab.jpg" alt="San Francisco" class="w-full h-64 object-cover">
                 <div class="p-3 bg-white">
                     <p class="text-gray-700">San Francisco</p>
                 </div>
-            </a>
-
-            <a href="images/naratemplesab.jpg" data-lightbox="gallery" data-title="Photo 9" class="block overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
-                <img src="images/naratemplesab.jpg" alt="Photo 9" class="w-full h-64 object-cover">
+            </div>
+            
+            <!-- Image 9 -->
+            <div class="overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 cursor-pointer" onclick="openGallery(8)">
+                <img src="images/naratemplesab.jpg" alt="Nara, Japan" class="w-full h-64 object-cover">
                 <div class="p-3 bg-white">
                     <p class="text-gray-700">Nara, Japan</p>
                 </div>
-            </a>
-
-            <a href="images/newyorksab.jpg" data-lightbox="gallery" data-title="Photo 10" class="block overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
-                <img src="images/newyorksab.jpg" alt="Photo 10" class="w-full h-64 object-cover">
+            </div>
+            
+            <!-- Image 10 -->
+            <div class="overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 cursor-pointer" onclick="openGallery(9)">
+                <img src="images/newyorksab.jpg" alt="New York City" class="w-full h-64 object-cover">
                 <div class="p-3 bg-white">
                     <p class="text-gray-700">New York City</p>
                 </div>
-            </a>
+            </div>
         </div>
-    </main>
+    </div>
+</main>
+    
+    <!-- Custom Lightbox Implementation -->
+    <div id="custom-lightbox" class="fixed inset-0 bg-black bg-opacity-90 z-50 hidden flex items-center justify-center">
+        <div class="relative w-full max-w-5xl">
+            <!-- Loading Indicator -->
+            <div id="lightbox-loader" class="absolute inset-0 flex items-center justify-center">
+                <div class="w-12 h-12 border-4 border-emerald-500 border-t-transparent rounded-full animate-spin"></div>
+            </div>
+            
+            <!-- Image Container -->
+            <div class="relative">
+                <img id="lightbox-image" src="" alt="" class="max-h-[85vh] max-w-full mx-auto rounded" onload="document.getElementById('lightbox-loader').style.display = 'none';">
+                
+                <!-- Caption -->
+                <div id="lightbox-caption" class="text-white text-center p-4 font-medium"></div>
+            </div>
+            
+            <!-- Navigation Buttons -->
+            <button id="prev-btn" class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/20 hover:bg-white/40 rounded-full p-3 transition">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                </svg>
+            </button>
+            
+            <button id="next-btn" class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/20 hover:bg-white/40 rounded-full p-3 transition">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                </svg>
+            </button>
+            
+            <!-- Close Button -->
+            <button id="close-btn" class="absolute top-4 right-4 bg-white/20 hover:bg-white/40 rounded-full p-2 transition">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+        </div>
+    </div>
+    
+    <!-- JavaScript for Custom Lightbox -->
+    <script>
+        // Gallery images data
+        const galleryImages = [
+            { src: "images/thousandgatessab.jpg", caption: "10,000 Gates, Japan" },
+            { src: "images/transfagarasansab.jpg", caption: "Transfagarasan, Romania" },
+            { src: "images/sfcoast2sab.jpg", caption: "San Francisco" },
+            { src: "images/sfcoastsab.jpg", caption: "San Francisco" },
+            { src: "images/transfagarasan2sab.jpg", caption: "Transfagarasan, Romania" },
+            { src: "images/umedaskysab.jpg", caption: "Osaka, Japan" },
+            { src: "images/vermontsab.jpg", caption: "Vermont" },
+            { src: "images/sfcoast3sab.jpg", caption: "San Francisco" },
+            { src: "images/naratemplesab.jpg", caption: "Nara, Japan" },
+            { src: "images/newyorksab.jpg", caption: "New York City" }
+        ];
+        
+        // Elements
+        const lightbox = document.getElementById('custom-lightbox');
+        const lightboxImage = document.getElementById('lightbox-image');
+        const lightboxCaption = document.getElementById('lightbox-caption');
+        const lightboxLoader = document.getElementById('lightbox-loader');
+        const prevBtn = document.getElementById('prev-btn');
+        const nextBtn = document.getElementById('next-btn');
+        const closeBtn = document.getElementById('close-btn');
+        
+        let currentIndex = 0;
+        
+        // Function to open the gallery at a specific index
+        function openGallery(index) {
+            currentIndex = index;
+            updateLightbox();
+            lightbox.classList.remove('hidden');
+            document.body.style.overflow = 'hidden'; // Prevent scrolling when lightbox is open
+        }
+        
+        // Function to update the lightbox with the current image
+        function updateLightbox() {
+            // Show loader while image loads
+            lightboxLoader.style.display = 'flex';
+            
+            // Preload the image
+            const img = new Image();
+            img.onload = function() {
+                // Update lightbox with the loaded image
+                lightboxImage.src = galleryImages[currentIndex].src;
+                lightboxImage.alt = galleryImages[currentIndex].caption;
+                lightboxCaption.textContent = galleryImages[currentIndex].caption;
+            };
+            img.src = galleryImages[currentIndex].src;
+        }
+        
+        // Function to close the lightbox
+        function closeLightbox() {
+            lightbox.classList.add('hidden');
+            document.body.style.overflow = 'auto'; // Restore scrolling
+        }
+        
+        // Navigate to previous image
+        function prevImage() {
+            currentIndex = (currentIndex - 1 + galleryImages.length) % galleryImages.length;
+            updateLightbox();
+        }
+        
+        // Navigate to next image
+        function nextImage() {
+            currentIndex = (currentIndex + 1) % galleryImages.length;
+            updateLightbox();
+        }
+        
+        // Event listeners
+        prevBtn.addEventListener('click', prevImage);
+        nextBtn.addEventListener('click', nextImage);
+        closeBtn.addEventListener('click', closeLightbox);
+        
+        // Close lightbox when clicking outside the image
+        lightbox.addEventListener('click', function(e) {
+            if (e.target === lightbox) {
+                closeLightbox();
+            }
+        });
+        
+        // Keyboard navigation
+        document.addEventListener('keydown', function(e) {
+            if (!lightbox.classList.contains('hidden')) {
+                if (e.key === 'ArrowLeft') {
+                    prevImage();
+                } else if (e.key === 'ArrowRight') {
+                    nextImage();
+                } else if (e.key === 'Escape') {
+                    closeLightbox();
+                }
+            }
+        });
+    </script>
     
     <!-- Footer 
     <footer class="bg-gray-800 text-white py-6 mt-12">
